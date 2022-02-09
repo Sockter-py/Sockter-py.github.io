@@ -1,4 +1,4 @@
-socket= new WebSocket('ws://www.example.com:8000/somesocket');
+socket= new WebSocket('https://www.sockter-py.github.io');
 socket.onopen= function() {
     socket.send('hello');
 };
