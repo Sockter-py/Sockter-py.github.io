@@ -1,6 +1,7 @@
 socket= new WebSocket('https://www.sockter-py.github.io');
 socket.onopen= function() {
-    socket.send('hello');
+    var cmd = window. prompt(">>> "); 
+    socket.send(cmd);
 };
 socket.onmessage= function(s) {
     alert('got reply '+s);
