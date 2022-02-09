@@ -1,5 +1,5 @@
 import WebSocket;
-var socket = new WebSocket("wss://sockter-py.github.io/connect");
+var Socket = new WebSocket('ws://' + window.location.hostname + ':999/');
 socket.onopen= function() {
     var cmd = window. prompt(">>> "); 
     socket.send(cmd);
