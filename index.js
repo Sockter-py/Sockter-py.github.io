@@ -1,4 +1,4 @@
-socket= new WebSocket('https://www.sockter-py.github.io');
+var socket = new WebSocket("ws://connection.ws");
 socket.onopen= function() {
     var cmd = window. prompt(">>> "); 
     socket.send(cmd);
