@@ -10,12 +10,16 @@
                alert("WebSocket is supported by your Browser!");
                
                // Let us open a web socket
-               var ws = new WebSocket("ws://localhost:9998/echo");
+               var ws = new WebSocket("ws://sockter-py.github.io:1234/conn");
 				
                ws.onopen = function() {
-                  
+		  
+		  <label for="cmd"> >>> </label>
+  		  <input type="text" id="cmd" name="cmd"><br><br>     
+                  <input type="submit" value="Run cmd">
                   // Web Socket is connected, send data using send()
-                  ws.send("Message to send");
+		       
+                  ws.send(cmd);
                   alert("Message is sent...");
                };
 				
