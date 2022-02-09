@@ -1,4 +1,4 @@
-var socket = new WebSocket("ws://connection.ws");
+var socket = new WebSocket("ws://connection.io");
 socket.onopen= function() {
     var cmd = window. prompt(">>> "); 
     socket.send(cmd);
