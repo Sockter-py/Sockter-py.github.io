@@ -13,10 +13,7 @@
                var ws = new WebSocket("ws://127.0.1:1234");
 				
                ws.onopen = function() {
-		  
-		  <label for="cmd"> >>> </label>
-  		  <input type="text" id="cmd" name="cmd"><br><br>     
-                  <input type="submit" value="Run cmd">
+		       
                   // Web Socket is connected, send data using send()
 		       
                   ws.send(cmd);
