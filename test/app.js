@@ -28,3 +28,14 @@ form.onsubmit = function(e) {
 
   return false;
 };
+// Handle messages sent by the server.
+socket.onmessage = function(event) {
+  var message = event.data;
+  messagesList.innerHTML += '<li class="received"><span>Received:</span>' +
+                             message + '</li>';
+};
+// Show a disconnected message when the WebSocket is closed.
+socket.onclose = function(event) {
+  socketStatus.innerHTML = 'Disconnected from WebSocket.';
+  socketStatus.className = 'closed';
+};
