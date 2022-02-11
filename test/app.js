@@ -1,3 +1,6 @@
+// Create a new WebSocket.
+var socket = new WebSocket('ws://localhost:1234/');
+
 window.onload = function() {
 
   // Get references to elements on the page.
