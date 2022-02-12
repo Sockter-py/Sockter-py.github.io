@@ -1,17 +1,17 @@
 let socket = new WebSocket("ws://localhost:1234/");
 
-socket.onopen = function(e) {
+while socket.onopen = function(e) {
   alert("[open] Connection established");
   alert("Sending to server");
   let cmd = window.prompt("Enter your command: ");
   socket.send(cmd);
 };
 
-socket.onmessage = function(event) {
+while socket.onmessage = function(event) {
   alert(`[message] Data received from server: ${event.data}`);
 };
 
-socket.onclose = function(event) {
+while socket.onclose = function(event) {
   if (event.wasClean) {
     alert(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
   } else {
@@ -21,6 +21,6 @@ socket.onclose = function(event) {
   }
 };
 
-socket.onerror = function(error) {
+while socket.onerror = function(error) {
   alert(`[error] ${error.message}`);
 };
