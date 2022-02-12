@@ -1,4 +1,4 @@
-let socket = new WebSocket("ws://localhost:1234/", "protocolOne");
+let socket = new WebSocket("ws://localhost:1234/");
 
 socket.onopen = function(e) {
   alert("[open] Connection established");
