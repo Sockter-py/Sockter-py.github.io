@@ -1,4 +1,4 @@
-let socket = new WebSocket("wss://localhost:1234/");
+let socket = require("ws");
 
 socket.onopen = function(e) {
   alert("[open] Connection established");
