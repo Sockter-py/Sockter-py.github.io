@@ -1,4 +1,4 @@
-let socket = new WebSocket("ws://192.168.1.13:1234/");
+let socket = new WebSocket("ws://conn.info:1234/");
 
 while (true){
     socket.onopen = function(e) {
