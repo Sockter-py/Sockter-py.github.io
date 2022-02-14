@@ -1,32 +1,28 @@
-let socket = new WebSocket("http:/localhost:1234/");
+navigator.tcpPermission.requestPermission({remoteAddress:"127.0.0.1", remotePort:6789}).then(
+  () => {
+    // Permission was granted
+    // Create a new TCP client socket and connect to remote host
+    var mySocket = new TCPSocket("127.0.0.1", 6789);
 
-socket.onopen = function(e) {
-  alert("[open] Connection established");
-  alert("Sending to server");
-  while (true){
-    let cmd = window.prompt("Enter your command: ");
-    socket.send(cmd);
+    // Send data to server
+    mySocket.writeable.write("Hello World").then(
+        () => {
+
+            // Data sent sucessfully, wait for response
+            alert("Data has been sent to server");
+            mySocket.readable.getReader().read().then(
+                ({ value, done }) => {
+                    if (!done) {
+                        // Response received, log it:
+                        alert("Data received from server:" + value);
+                    }
+
+                    // Close the TCP connection
+                    mySocket.close();
+                }
+            );
+        },
+        e => console.error("Sending error: ", e)
+    );
   }
-
-};
-
-socket.onmessage = function(event) {
-  alert(`[message] Data received from server: ${event.data}`);
-};
-
- socket.onclose = function(event) {
-  if (event.wasClean) {
-    alert(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
-  } else {
-    // e.g. server process killed or network down
-    // event.code is usually 1006 in this case
-    alert('[close] Connection died');
-  }
-};
-
-socket.onerror = function(error) {
-  alert(`[error] ${error.message}`);
-};
-
-
-
+);
