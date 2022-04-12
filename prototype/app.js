@@ -20,4 +20,4 @@ socket.onerror = function(error) {
   alert(`[error] ${error.message}`);
 };
 
-document.getElementById("ItemPreview").src = "data:image/png;base64," + imageAsByte;
+document.getElementById("ItemPreview").src = "data:image/png;base64," + imageAsBytes;
