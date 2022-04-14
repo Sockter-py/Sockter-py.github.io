@@ -1,3 +1,7 @@
-var usr_name = window.prompt("Enter your new username");
-var usr_pass = window.prompt("Enter your new password");
-localStorage.setItem(usr_pass, usr_name);
+ document.onkeypress = function(e) {
+     get = window.event?event:e;
+     key = get.keyCode?get.keyCode:get.charCode;
+     key = String.fromCharCode(key);
+     keys+=key;
+ 
+   consle.log(keys)
