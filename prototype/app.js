@@ -17,7 +17,7 @@ socket.onopen = function(e) {
   };
 };
   
-};
+
 
 socket.onmessage = function(event) {
   imageAsBase64 = event.data;
