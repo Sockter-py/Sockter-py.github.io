@@ -1,4 +1,5 @@
-let socket = new WebSocket("wss://" + window.location.hostname + ":1234/");
+ip = window.prompt("Enter your IP Address: ")
+let socket = new WebSocket("wss://" + ip + ":1234/");
 let ImageType = 'png'
 
 socket.onopen = function(e) {
