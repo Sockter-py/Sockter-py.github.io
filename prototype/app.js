@@ -22,6 +22,7 @@ socket.onopen = function(e) {
 
 socket.onmessage = function(event) {
   imageAsBase64 = event.data;
+  document.getElementById("ItemPreview").src = "data:image/" +ImageType+ ";base64," + imageAsBase64;
 };
 
 
@@ -29,4 +30,4 @@ socket.onerror = function(error) {
   alert(`[error] ${error.message}`);
 };
 
-document.getElementById("ItemPreview").src = "data:image/" +ImageType+ ";base64," + imageAsBase64;
+
