@@ -1,5 +1,7 @@
-body{
-  background: black;
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
 }
 
 p{
