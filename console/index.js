@@ -4,7 +4,7 @@ document.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
       let console = document.getElementById('console');
       let input = console.value;
-        main();
+      main();
       
     }
 });
