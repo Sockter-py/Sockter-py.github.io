@@ -4,6 +4,7 @@ document.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
       let console = document.getElementById('console');
       let input = console.value;
+        main();
       
     }
 });
@@ -34,7 +35,7 @@ if (input.indexOf('ssh') !== -1) {
 }
 console.value += '\n'+input+' is not a command';
 
-VM352:16 
+
 
 
 
