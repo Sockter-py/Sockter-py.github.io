@@ -9,7 +9,7 @@ document.addEventListener("keyup", function(event) {
 });
 
 function main(){
-  if input == "cls"{
+  if (input == "cls"){
   input = ''
 }
 
@@ -22,6 +22,11 @@ if (input.indexOf('ssh') !== -1) {
     socket.onmessage = function(event) {
       console.value = '\n' + event.data + ''  
     }
+  finally {
+      console.value += '\n An error has accored when \n connecting to victim. Try checking syntax:\n SSH -h [HOST:PORT] -p [PASSWORD]'
+  }
+
+
 
 };
   }
@@ -29,11 +34,7 @@ if (input.indexOf('ssh') !== -1) {
 }
 console.value += '\n'+input+' is not a command';
 
-
-
-
-}
-
+VM352:16 
 
 
 
