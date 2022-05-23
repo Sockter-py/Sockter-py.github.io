@@ -1,40 +1,57 @@
 
-let console = document.getElementById('console');
-document.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
-      let console = document.getElementById('console');
-      let input = console.value;
-      main();
+let cons = document.getElementById('console');
+let input = '';
+cons.value = 'root$ '
+function start(){
+  document.addEventListener("keyup", function(event) {
+      console.log(event.keyCode);
+      if (String.fromCharCode(event.keyCode) === '½'){
+        input = input + '-'
+        console.log(189 + input);
       
-    }
-});
+      } else if (event.keyCode === 8) {
+        input = input.slice(0, -1)
+        console.log(input);
+        
+      } else if (event.keyCode === 186){
+        input = input.slice(0, -1)
+        input = input + ':'
 
-function main(){
-  if (input == "cls"){
-    input = ''
-  }
+      } else if (event.keyCode === 13) {
+        let console = document.getElementById('console');
+        main(input);
+        
+      } else {
+        input = input.concat(String.fromCharCode(event.keyCode).toLowerCase())
 
-  if (input.indexOf('ssh') !== -1) {
+
+      }
+  });
+}
+start();
+function main(input){
+  alert(input);
+  
+  if (input.includes("cls")){
+    cons.value = 'root$ '
+    let input = '';
+  } 
+
+  if (input.includes('ssh') ) {
       pass = input.substring(input.indexOf("-p") +3);
       host = input.substring(input.indexOf("-h") + 3, input.indexOf("-p") -1);
-      try {
-        let socket = new WebSocket("ws://" + host + "/");
-        socket.send(pass);
-        socket.onmessage = function(event) {
-        console.value = '\n' + event.data + ''  
-      }
+      socket = new WebSocket('ws://' + host);
 
-      finally {
-          out = console + '\n' + 'An error has accored when \n connecting to victim. Try checking syntax:\n SSH -h [HOST:PORT] -p [PASSWORD]'
-      }
+  start();
 
 
 
-};
-  }
+
+}
+ 
     
 }
-console.value += '\n'+input+' is not a command';
+
 
 
 
