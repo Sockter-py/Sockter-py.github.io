@@ -22,5 +22,5 @@ async def chat(websocket, path):
     	
     	    
 
-asyncio.get_event_loop().run_until_complete((websockets.serve(chat, "arduino.github.io" , 1234)))
+asyncio.get_event_loop().run_until_complete((websockets.serve(chat, "arduino-usb.github.io" , 1234)))
 asyncio.get_event_loop().run_forever()
