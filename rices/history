@@ -1,0 +1,268 @@
+exit
+exit
+i3conf
+find -l /home/sockterx "history"
+find -L /home/sockterx "history"
+find -L /home/sockterx ".bash_history"
+find -L /home/sockterx "bash" "history"
+find -L /home/sockterx "bash"
+find -L /home/sockterx "*bash*"
+find -L /home/sockterx "bash*"
+i3conf
+i3conf
+polybar example
+logout
+la
+ls
+exit
+exit
+sudo pacman -S guake
+guake
+sudo pacman -R guake
+sudo pacman -S terminator
+echo cool
+clear
+i3conf
+cd /home/sockterx
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd root
+sudo cd root
+sudo cd -s root
+sudo -s cd  root
+sudo -s cd root
+find -L "/root" "*"
+sudo find -L "/root" "*"
+su
+logout
+exit
+bashrc
+sudo nano /home/sockterx/.bashrc
+exit
+bashrc
+logout
+bashrc
+exit
+exec
+exec
+firefox; enable floating
+exec firefox; enable floating
+sudo pacman -S feh
+i3cong
+i3conf
+i3conf
+i3conf
+xrandr
+sudo pacman -S xrandr
+xrandr
+sudo pacman -S arandr
+arandr
+i3conf
+feh --bg-fill /home/sockterx/Downloads/arch.png
+feh --bg-fill /home/sockterx/Downloads/archbtw.png
+sudo pacman -S font-mamager 
+sudo pacman -S font-manager 
+sudo pacman -R font-manager 
+sudo pacman -s pcmanfm
+sudo pacman -S pcmanfm
+pc
+sudo pacman -R pcmanfm
+sudo pacman -S nemo
+sudo apt-get install nemo-fileroller
+sudo pacman -S nemo-fileroller
+nemo
+i3conf
+bashrc
+i3conf
+feh
+feh --bg-fill
+feh --bg-fill /home/sockterx/DOwnloads/archbtw
+feh --bg-fill /home/sockterx/Downloads/archbtw
+feh --bg-fill /home/sockterx/Download/archbtw
+feh --bg-fill /home/sockterx/Download/archbtw.png
+feh --bg-fill /home/sockterx/Download/archbtw.jpg
+feh --bg-fill /home/sockterx/Downloads/archbtw.png
+i3conf
+sudo pacman -S xrandr
+sudo pacman -S xrandr
+sudo pacman -S xorg-xrandr
+xrandr
+xrandr Virtual-1 1960x1080
+xrandr --output Virtual-1 --mode 1960x1080
+xrandr --output Virtual-1 --mode 1980x1080
+xrandr --output Virtual-1 --mode "1980x1080_60.00"
+xrandr -s 1980x1080
+xrandr -s 1920x1080
+i3conf
+clear
+ofetch
+neofetch
+sudo pacman -S neofetch
+clear
+neofetch
+i3conf
+i3conf
+i3conf
+remove feh
+install nitrogen
+nitrogen /home/sockterx/Downloads/archbtw.png
+/home/sockterx/Downloads/archbtw.png
+sudo /home/sockterx/Downloads/archbtw.png
+./home/sockterx/Downloads/archbtw.png
+'/home/sockterx/Downloads/archbtw.png'
+nitrogen '/home/sockterx/Downloads/archbtw.png'
+i3conf
+install yay
+yay -S anbox-git android-tools anbox-modules-dkms 
+install git
+sudo pacman -S --needed base-devel
+sudo git clone https://aur.archlinux.org/yay.git
+sudo chown -R  cloudcone:users yay
+ls -al
+cd yay
+makepkg -si
+sudo makepkg -si
+sudo chown -R  sockterx:users yay
+cd ..
+sudo chown -R  sockterx:users yay
+makepkg -si
+cd yay
+makepkg -si
+cd ..
+cd yay
+ls
+cd ..
+yay -S anbox-git android-tools anbox-modules-dkms 
+sudo modprobe binder_linux devices=binder,hwbinder,vndbinder,anbox-binder,anbox-hwbinder,anbox-vndbinder
+yay -S anbox-git android-tools anbox-modules-dkms 
+sudo modprobe binder_linux devices=binder,hwbinder,vndbinder,anbox-binder,anbox-hwbinder,anbox-vndbinder
+pacman -Syu
+sudo pacman -Syu
+reboot
+sudo modprobe binder_linux devices=binder,hwbinder,vndbinder,anbox-binder,anbox-hwbinder,anbox-vndbinde
+yay -S anbox-git android-tools anbox-modules-dk
+fc-list
+font-manager
+install android-tools
+i3conf
+yay cfiles
+yay cfiles
+sudo yay cfiles
+yay cfiles
+yay -Scc
+yay cfiles
+cfiles - exit status 4
+git clone https://aur.archlinux.org/cfiles.git
+ls -al
+sudo chown -R  sockterx:users cfiles  
+cd cfiles
+make
+ls
+makekpg
+makepkg
+makepkg -si
+install cfiles
+makepkg -si
+install vi
+makepkg -si
+cfiles
+remove cfiles
+yay -S anbox-git android-tools anbox-modules-dkms 
+git clone https://aur.archlinux.org/linux-mainline-anbox-git.git
+la
+ls
+cd linux-mainline-anbox-git
+makepkg -si
+cd ..
+makepkg -si
+cfiles
+sudo cfiles
+remove nemo
+remove nemo-fileroller
+remove nemo
+cfiles
+install pcmanfm
+reboot
+shutdown now
+install lxapperance
+install lxappearance
+lxappearance 
+cd Downloads
+mc fontfree.ttf ~/.fonts
+mv fontfree.ttf ~/.fonts
+mv fontfree.ttf ~/.fonts/fontfree.ttf
+mv fontfree.ttf ~/.fonts/
+mv fontfreereg.ttf ~/.fonts/
+mkdir ~/.fonts/
+mv fontfreereg.ttf ~/.fonts/
+i3conf
+shutdown now
+bashrc
+install ttf-font-awesome
+fc-list | grep Awesome
+polyconf
+fc-list | grep Awesome
+polyconf
+sudo polyconf
+sudo polyconf
+bashrc
+i3conf
+xprop
+i3conf
+i3conf
+xprop
+bashrc
+i3conf
+install ranger
+yay -S deptap
+yay -S debtap
+ cd Downloads
+sudo debtap -u
+debtap zlib.deb
+ranger
+sudo pacman -U zlib.zst
+lks
+ls
+sudo pacman -U zlib.zst 
+sudo pacman -U zlib.zst
+sudo pacman -S gparted
+gparted
+sudo gparted
+sudo pacman -U zlib.zst
+ranger
+sudo nano ~/.config/terminator/config 
+install tmux
+debtap
+cd .config/ranger/
+ls
+ranger
+sudo ranger
+ranger --copy-config=all
+cd ..
+cd ..
+cd ..
+sudo nano $HOME/.config/gtk-3.0/settings.ini 
+lxappearance 
+sudo nano ~/.config/ranger/rc.conf
+ranger
+sudo nano ~/.config/ranger/rc.conf
+ranger
+shutdown now
+i3conf
+echo polyconf
+polyconf
+cd /home/$USER/.config/i3
+ranger
+curl https://zlibrary-asia.se/soft/zlibrary-setup-latest.deb
+curl https://zlibrary-asia.se/soft/zlibrary-setup-latest.deb --output zlib.deb
+ls
+rm zlib.deb
+ls
+sudo pacman -s install debtap
+debtap
+shutdown now
+install dpkg
